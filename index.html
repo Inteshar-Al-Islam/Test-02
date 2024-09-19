@@ -13,8 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="grid grid-cols-2 place-items-end lg:h-[450px]">
+  <body class="lg:w-[1900px]">
+    <div class="grid grid-cols-2 place-items-end lg:h-[450px] lg:w-[1900px]">
       <div
         class="text-3xl md:text-5xl lg:text-7xl lg:w-[400px] font-bold text-[#575757] ml-2 mt-6 md:mt-[70px] md:ml-[20px] lg:mr-[350px]"
       >
@@ -35,43 +35,35 @@
         />
       </div>
     </div>
-    <div class="flex flex-col items-center">
-      <div class="text-[#828282] text-[25px] montserrat mt-[10px]">
+    <div class="flex flex-col items-center text-center w-[400px] lg:w-[1900px]">
+      <div class="text-[#828282] lg:text-[25px] montserrat mt-[10px]">
         Imagine you don't need a diet because we provide healthy and delicious
         food for you!
       </div>
       <button
-        class="w-[160px] h-[56px] bg-gradient-to-l from-red-600 to-orange-500 text-white font-semibold text-[20px] rounded-full mt-7"
+        class="w-[80px] h-[30px] text-[12px] lg:w-[160px] lg:h-[56px] bg-gradient-to-l from-red-600 to-orange-500 text-white font-semibold lg:text-[20px] rounded-full mt-7"
       >
-        Donate Now
+        Order Food
       </button>
     </div>
     <div
-      class="mt-5"
-      style="
-        background-image: url('./images/shapes/7.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 1900px;
-        height: 800px;
-      "
+      class="w-[425px] h-[170px] mt-5 lg:w-[1900px] lg:h-[800px] bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./images/shapes/7.png')"
     >
-      <div class="flex flex-row w-[1900px] justify-around">
-        <div>
-          <img
-            src="./images/female/Person Image.png"
-            class="h-[650px] w-[400px] mt-[150px]"
-          />
-        </div>
+      <div class="flex flex-row w-screen lg:w-[1900px] justify-around">
+        <img
+          src="./images/female/Person Image.png"
+          class="h-[145px] w-[90px] lg:h-[650px] lg:w-[400px] lg:mt-[150px] mt-[25px]"
+        />
+
         <div class="flex flex-col">
           <div
-            class="h-[54px] w-[444px] montserrat font-bold text-[40px] text-[#707070] mt-[200px]"
+            class="lg:h-[54px] lg:w-[444px] montserrat font-bold lg:text-[40px] text-[#707070] lg:mt-[200px] mt-[20px]"
           >
             About Me
           </div>
           <div
-            class="w-[444px] mt-[50px] montserrat text-[#18191F] text-[25px]"
+            class="w-[160px] lg:w-[444px] lg:mt-[50px] montserrat text-[#18191F] lg:text-[25px] text-[8px]"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
             diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem
@@ -80,11 +72,108 @@
           </div>
           <div>
             <button
-              class="w-[160px] h-[56px] bg-gradient-to-l from-red-600 to-orange-500 text-white font-semibold text-[20px] rounded-full mt-[30px]"
+              class="w-[60px] h-[20px] lg:w-[160px] lg:h-[56px] bg-gradient-to-l from-red-600 to-orange-500 text-white font-semibold lg:text-[20px] text-[8px] rounded-full lg:mt-[30px] mt-[10px]"
             >
               Contact me
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center w-[425px] lg:w-[1900px]"
+    >
+      <div class="montserrat text-[#676767] font-bold mt-8 lg:text-[50px]">
+        My Recipies
+      </div>
+      <div
+        class="montserrat text-[#252525] w-[360px] lg:w-[1200px] text-[10px] lg:text-[30px] text-center mt-3"
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s.
+      </div>
+    </div>
+    <!--starting of the button pair-->
+    <div class="flex justify-center space-x-3 lg:space-x-12 mt-4 montserrat">
+      <!-- First Button -->
+      <div
+        class="w-[200px] lg:w-[600px] bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 lg:flex"
+      >
+        <img
+          src="./images/food/Project Cover.jpg"
+          alt="Recipe Image 1"
+          class="w-full lg:h-[200px] object-cover mb-2 rounded-t-md"
+        />
+        <div class="lg:pl-10 lg:pt-5">
+          <div class="font-extrabold lg:text-[30px]">Recipe Title</div>
+          <p class="text-[10px] lg:text-[15px] text-gray-500">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Button -->
+      <div
+        class="w-[200px] lg:w-[600px] bg-white p-4 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 lg:flex"
+      >
+        <img
+          src="./images/food/Project Cover.jpg"
+          alt="Recipe Image 1"
+          class="w-full lg:h-[200px] object-cover mb-2 rounded-t-md"
+        />
+        <div class="lg:pl-10 lg:pt-5">
+          <div class="font-extrabold lg:text-[30px]">Recipe Title</div>
+          <p class="text-[10px] lg:text-[15px] text-gray-500">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-around bg-white shadow-lg rounded-lg p-6 mx-auto w-[full] lg:w-[1250px] lg:mt-[50px]"
+    >
+      <!-- First Stat -->
+      <div class="text-center mx-8">
+        <h2 class="lg:text-4xl font-bold text-gray-800">700k</h2>
+        <p class="text-gray-500 text-[10px] lg:text-[30px]">
+          YouTube Subscribers
+        </p>
+      </div>
+
+      <!-- Second Stat -->
+      <div class="text-center mx-8">
+        <h2 class="lg:text-4xl font-bold text-gray-800">2.4m</h2>
+        <p class="text-gray-500 text-[10px] lg:text-[30px]">
+          Instagram Followers
+        </p>
+      </div>
+
+      <!-- Third Stat -->
+      <div class="text-center mx-8">
+        <h2 class="lg:text-4xl font-bold text-gray-800">100k</h2>
+        <p class="text-gray-500 text-[10px] lg:text-[30px]">
+          Dribbble Shot Likes
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center bg-gray-100 mt-[20px]">
+      <div
+        class="w-full lg:h-[177px] bg-black flex flex-col items-center justify-center text-center"
+      >
+        <div
+          class="text-orange-500 text-[24px] font-bold mb-2 font-roboto font-bold italic lg:text-[40px]"
+        >
+          Eat Fresh
+        </div>
+        <div class="text-white lg:text-[18px] mb-4">
+          Eat healthy to live healthy. Live healthy to live happy.
         </div>
       </div>
     </div>
